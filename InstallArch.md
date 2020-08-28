@@ -22,7 +22,7 @@ swapon /dev/sda3
 
 vim /etc/pacman.conf
 
-#### 挂在目录
+#### 挂载目录
 
 mount /dev/sda2 /mnt
 
