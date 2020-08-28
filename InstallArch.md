@@ -56,15 +56,11 @@ LANG=en_US.UTF-8
 
 /mnt/etc/hosts
 
-\``` 
-
-127.0.0.1 localhost
-
-::1	localhost
-
-127.0.0.1 hostname.domain hostname
-
-\```
+```
+127.0.0.1 	localhost
+::1			localhost
+127.0.0.1 	hostname.domain hostname
+```
 
 #### 切换bash进入安装好的arch
 
@@ -97,4 +93,8 @@ grub-install --target=x86_64-efi --efi-directory=/boot
 #### 安装软件
 
 pacman -S dhcpcd vim base-devel 
+
+#### 重启进入arch
+
+reboot
 
