@@ -1,0 +1,139 @@
+{
+  "policy": null,
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "info"
+  },
+  "inbounds": [
+    {
+      "tag": "proxy",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": false,
+        "ip": null,
+        "address": null,
+        "clients": null
+      },
+      "streamSettings": null
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cc.jhsyi77.xyz",
+            "port": 55555,
+            "users": [
+              {
+                "id": "6b4bda3d-778a-45c4-9fe8-88af5c166f18",
+                "alterId": 100,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ],
+        "servers": null,
+        "response": null
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": null,
+        "tlsSettings": null,
+        "tcpSettings": {
+          "connectionReuse": true,
+          "header": {
+            "type": "http",
+            "request": {
+              "version": "1.1",
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "headers": {
+                "Host": [
+                  ""
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ],
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache"
+              }
+            },
+            "response": null
+          }
+        },
+        "kcpSettings": null,
+        "wsSettings": null,
+        "httpSettings": null,
+        "quicSettings": null
+      },
+      "mux": {
+        "enabled": false
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {
+        "vnext": null,
+        "servers": null,
+        "response": null
+      },
+      "streamSettings": null,
+      "mux": null
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "vnext": null,
+        "servers": null,
+        "response": {
+          "type": "http"
+        }
+      },
+      "streamSettings": null,
+      "mux": null
+    }
+  ],
+  "stats": null,
+  "api": null,
+  "dns": null,
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "port": null,
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "ip": null,
+        "domain": null
+      }
+    ]
+  }
+}
