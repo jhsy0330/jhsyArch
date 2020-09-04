@@ -12,9 +12,15 @@ pacman -S sddm sddm-kcm
 
 
 
-### 安装KDE桌面 plasma KDE桌面应用 kde-applications
+### 安装KDE桌面 plasma 
 
 pacman -S plasma kde-applications
+
+
+
+### KDE桌面应用 kde-applications
+
+pacman -S kde-applications
 
 
 

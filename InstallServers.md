@@ -6,6 +6,8 @@
 
 安装声音软件包 alsa-utils pulseaudio  pulseaudio-alsa
 
+安装声音设备控制器pavucontrol
+
 安装输入法 fcitx fcitx-im kcm-fcitx
 
 添加环境变量./xprofile
