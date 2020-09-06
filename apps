@@ -36,6 +36,10 @@ google-chrome
 nautilus
 dolphin
 
+#下载
+motrix
+aria2
+
 #声音驱动
 alsa
 alsa-utils
