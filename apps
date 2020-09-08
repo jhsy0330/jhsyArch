@@ -22,6 +22,7 @@ pamac-aur
 #字体
 wqy-microhei
 ttf-mac-fonts 
+ttf-symbola - 提供许多 Unicode 符号，包括 Emoji
 
 #输入法
 fcitx-lilydjwg-git
@@ -79,6 +80,7 @@ wps-office
 netease-cloud-music
 obs-studio
 xmind
+thunderbird
 
 #终端程序
 neofetch
